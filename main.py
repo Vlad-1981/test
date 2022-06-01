@@ -5,4 +5,4 @@ text2 = 'new some text'
 def up(text2):
     return text2.upper()
 
-print(text2)
+print(up(text2))
