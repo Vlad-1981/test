@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}
+        Форма ввода данных
+{% endblock %}
+
+{% block body %}
+
+    <br>
+    <div class="container">
+        <h2>{{ the_title }}</h2>
+    </div>
+    <br>
+    <div class="container d-flex flex-wrap left">
+
+
+        <form id="entry" class="row g-1" method="POST" action='/search4'>
+
+            <p>Используйте данную форму, чтобы подтвердить запрос:</p>
+
+                <table>
+                    <tr>
+                        <th>Phrase:</th>
+                        <td>
+                            <input class="form-control" type="text" name="phrase"
+                                   placeholder="введите предложение" required maxlength="200">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Letters:</th>
+                        <td>
+                            <input class="form-control" type="text" name="letters"
+                                   value="aeiou" required maxlength="50">
+                        </td>
+                    </tr>
+                    <br>
+                    <tr><td><br></td></td></tr>
+                    <tr><td colspan="2">Когда будете готовы, нажмите кнопку 'submit'</td></tr>
+                    <tr><td><br></td></td></tr>
+                    <tr>
+                    <th></th>
+                        <td>
+                            <input class="btn btn-primary" type="SUBMIT" value="Submit">
+                        </td>
+                    </tr>
+
+                </table>
+
+        </form>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

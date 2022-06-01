@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block body %}
+    <br>
+    <div class="container">
+        <h2>{{ the_title }}</h2>
+    </div>
+    <br>
+
+        <div class="container">
+            <div class="bd-example">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Phrase:</h5>
+                        <p class="card-text">{{ the_phrase }}</p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Letters:</h5>
+                        <p class="card-text">{{ the_letters }}</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+            <br>
+        <div class="container">
+            <div class="bd-example">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">когда {<span class="result">{{ the_phrase }}</span>} ищется по запросу {<span class="result">{{ the_letters }}</span>}, возвращаются следующие результаты:</p>
+                            <h5 class="card-title">{{ the_results }}</h5>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+    {% block title %}
+      Report
+    {% endblock %}
+
+    {% block body %}
+
+        <br>
+            <div class="container">
+                <div class="bd-example">
+                    <div class="card">
+                      <div class="card-header">
+                        <h2 class="card-title">{{ the_title }}</h2>
+                      </div>
+                        <table class="viewlog">
+                            <tr>
+                                {% for row_title in the_row_titles %}
+                                    <th>{{row_title}}</th>
+                                {% endfor %}
+                            </tr>
+                            {% for log_row in the_data %}
+                                <tr>
+                                        {% for item in log_row %}
+                                            <td>{{ item }}</td>
+                                        {% endfor %}
+                                </tr>
+                            {% endfor %}
+                      </table>
+                    </div>
+                </div>
+            </div>
+
+    {% endblock %}

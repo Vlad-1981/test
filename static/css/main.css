@@ -1,0 +1,41 @@
+/*header.top img#headerLogo {
+  float:			center;
+  position:			absolute;
+  right:			0px;
+  z-index:			0;
+*/
+.result {
+                font-weight: bold;
+                color: blue;
+            }
+
+.viewlog {                           /* заголовки viewlog.html*/
+
+            padding: 10px;
+}
+
+.viewlog th {                           /* заголовки viewlog.html*/
+
+            text-align: center;
+}
+
+/*footer {
+              padding: 1rem;
+              background: #333;
+              color: #fff;
+              text-align: center;
+}
+
+
+footer {
+                  /* Позиционируем footer внизу main */
+                  /*float: bottom;
+                  /*position: absolute;*/
+                  /*bottom: 0;
+                  width: 100%;
+                  clear:    top;
+                  /* Высота footer по умолчанию */
+                  /*height: 30px;*/
+                  /*background: black;
+}
+*/
