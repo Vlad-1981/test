@@ -126,10 +126,6 @@ def view_the_log() -> 'html':
                            the_data=contents)
 
 
-def minus(a, b):
-    return a - b
-
 if __name__ == "__main__":
     app.run(debug=True)
 
-    print(minus(5, 10))
